@@ -1,0 +1,15 @@
+services:
+  mw:
+    image: nazim324/ubuntu-desktop-wgpu
+    ports:
+      - 14000:4000
+      - 15000:5000
+    environment:
+      - USER=ubuntu
+      - PASSWORD=ubuntu
+      - REMOTE_DESKTOP=novnc
+    volumes:
+      - mwdata:/home/ubuntu/data
+volumes:
+  mwdata:
+      

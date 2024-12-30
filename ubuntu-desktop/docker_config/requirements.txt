@@ -1,0 +1,6 @@
+selenium
+beautifulsoup4
+bs4
+pillow
+undetected-chromedriver
+lxml

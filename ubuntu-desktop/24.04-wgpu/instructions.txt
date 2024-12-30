@@ -1,0 +1,8 @@
+docker build ubuntu-desktop --file .\ubuntu-desktop\24.04-wgpu\Dockerfile --build-arg BASE_IMAGE=ubuntu:24.04 --build-arg CHROME_VERSION=131.0.6778.204 -t nazim324/ubuntu-desktop-wgpu
+
+docker run --restart=on-failure --name mw --shm-size=1024m -e USER=ubuntu -e PASSWORD=ubuntu -e REMOTE_DESKTOP=novnc -p 14000:4000 -p 15000:5000 nazim324/ubuntu-desktop-wgpu:latest
+
+docker run --restart=on-failure --name mw --shm-size=1024m -e USER=ubuntu -e PASSWORD=ubuntu -e REMOTE_DESKTOP=novnc -p 14000:4000 -p 15000:5000 192.168.10.249:5000/ubuntu-desktop-wgpu:latest
+
+docker tag nazim324/ubuntu-desktop-wgpu 192.168.10.249:5000/ubuntu-desktop-wgpu
+docker push 192.168.10.249:5000/ubuntu-desktop-wgpu

@@ -1,0 +1,24 @@
+{
+    "device": {
+        "browser": "chrome",
+        "build": "031224",
+        "database": "sqlite",
+        "driver": "/home/ubuntu/.local/share/undetected_chromedriver/chromedriver",
+        "driver_type": "extended",
+        "maxcommentiteration": 100,
+        "maxpostfetch": 100,
+        "media": "facebook",
+        "password": "Hello@123",
+        "posttaskaction": "default",
+        "profile_dir": "Default",
+        "token": "",
+        "user_dir": "/home/ubuntu/data/chromium",
+        "username": "tt2",
+        "version": "1.2.8"
+    },
+    "facebook": {
+        "password": "",
+        "url": "https://facebook.com",
+        "username": ""
+    }
+}
